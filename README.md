@@ -5,6 +5,8 @@ Bu proje, bir kütüphane yönetim sistemi örneğidir. Kullanıcılar kitap ekl
 ## Özellikler
 
 - **Kayıt Ol ve Giriş Yap**: Kullanıcılar üye olabilir ve sisteme giriş yapabilir.
+- ![Kayıt Ve Giriş Ekranları](images/ekran1.png)
+- ![Kayıt Ve Giriş Ekranları](images/ekran3.png)
 - **Kitap Yönetimi**: Kullanıcılar kitap ekleyebilir, düzenleyebilir, silebilir ve listeleyebilir.
 - **Yazar Yönetimi**: Yazar ekleyebilir, düzenleyebilir, silebilir ve yazarların listesini görebilirsiniz.
 - **Doğrulama**: Kullanıcı ve kitap formlarında gerekli alan doğrulamaları yapılmıştır.

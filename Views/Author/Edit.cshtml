@@ -1,0 +1,38 @@
+﻿@model AuthorEditViewModel
+@if (@User.Claims.FirstOrDefault(x => x.Type == "id")?.Value != null)
+{
+
+    <h3 class="text-secondary fw-bolder">Edit Author</h3>
+    <input asp-for="Id" type="hidden" />
+    <form asp-action="Edit" asp-controller="Author" method="post">
+        <div class="mb-2">
+            <label class="form-label fw-bolder">Name</label>
+            <input asp-for="FirstName" class="form-control" type="text" />
+            <span asp-validation-for="FirstName" class="text-danger fw-bold"></span>
+        </div>
+        <div class="mb-2">
+            <label class="form-label fw-bolder">SurName</label>
+            <input asp-for="LastName" class="form-control" type="text" />
+            <span asp-validation-for="LastName" class="text-danger fw-bold"></span>
+        </div>
+        <div class="mb-2">
+            <label class="form-label fw-bolder">Birth Day</label>
+            <input asp-for="DateOfBirth" class="form-control" type="date" />
+            <span asp-validation-for="DateOfBirth" class="text-danger fw-bold"></span>
+        </div>
+        <button type="submit" class="btn btn-primary">Edit</button>
+    </form>
+}
+else
+{
+
+    <div class="alert alert-danger">
+        <h5 class="text-center fw-bold">You must be logged in to see the authors section.</h5>
+    </div>
+
+}
+
+
+
+
+
